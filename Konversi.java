@@ -12,6 +12,28 @@ public static void Biner(int n)
         }
     System.out.print(n%2);
 }
+//OKTAL
+public static void Oktal(int n)
+{
+    char[] daftarOktal={'0','1','2','3','4','5','6','7'};
+    int sisaBagi = n % 8;
+    if(n>0)
+        {
+        Oktal((n - sisaBagi)/8);
+        System.out.print(daftarOktal[n%8]);
+        }   
+}
+//HEXA
+public static void Hexa(int n)
+{
+    char[] daftarHexa={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+    int sisaBagi = n % 16;
+    if(n>0)
+        {
+            Hexa((n - sisaBagi)/16);
+            System.out.print(daftarHexa[n%16]);
+        }
+}
 public static void inputDes()
 {
     System.out.print("Masukkan Bilangan Desimal = ");
